@@ -1,7 +1,7 @@
 {
 	"lang": "en",
-	"name": "Math",
-	"short_name": "Math",
+	"name": "Calculator",
+	"short_name": "Calc",
 	"description": "Solve any math for x variable.",
 	"icons": [
 		{
