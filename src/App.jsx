@@ -44,12 +44,14 @@ function App() {
         <div className="left">
           <form spellCheck="false" onSubmit={(e) => e.preventDefault()}>
             <textarea
+              id="input"
               ref={textareaRef}
               rows={1}
               cols={80}
               autoFocus
               value={content}
               onChange={handleInput}
+              wrap="off"
               placeholder="Solve for x"
             />
           </form>

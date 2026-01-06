@@ -16,7 +16,11 @@ html {
 	}
 }
 
-* { margin: 0; padding: 0; }
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
 
 body {
 	background-color: var(--gainsboro);
@@ -34,21 +38,23 @@ a { text-decoration: none; }
 	height: 100dvh;
 }
 
-.left, .right { padding: 10px 0; height: calc(100% - 20px); }
+.left, .right { padding: 10px 0; }
 .left { background-color: var(--white); }
 .right { background-color: var(--whitesmoke); }
 
 textarea {
-	background-color: var(--white);;
+	background-color: var(--white);
 	border: 0 none;
 	color: var(--black);
+	display: block;
 	font-family: "Intel One Mono", monospace;
 	font-size: var(--regular);
 	line-height: 25px;
 	overflow: hidden;
-	padding: 0 15px;
+	padding-left: 15px;
 	resize: none;
-	width: calc(100% - 30px);
+	white-space: pre;
+	width: 100%;
 }
 
 textarea:focus { outline: 0 none; }
@@ -56,13 +62,14 @@ textarea:focus { outline: 0 none; }
 /* In React, we'll map p tags directly, so this selector stays valid */
 #response p {
 	border-bottom: var(--gainsboro) 1px solid;
+	line-height: 24px;
 	overflow: hidden;
 	padding: 0 15px;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
 
-#response p:last-child { border-bottom: 0 none; }
+#response p:last-child { border-bottom: var(--whitesmoke) 1px solid; }
 
 .help {
 	bottom: 10px;
