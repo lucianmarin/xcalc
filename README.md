@@ -1,6 +1,6 @@
-# Math
+# Calc
 
-Math is a minimalist, reactive notepad calculator. It allows users to type mathematical expressions and variables on the left side of the screen and see the evaluated results in real-time on the right side. It combines the freedom of a text editor with the power of a scientific calculator.
+Calc is a minimalist, reactive notepad calculator. It allows users to type mathematical expressions and variables on the left side of the screen and see the evaluated results in real-time on the right side. It combines the freedom of a text editor with the power of a scientific calculator.
 
 ## Features
 
@@ -29,7 +29,7 @@ To run this project locally, follow these steps:
 1.  Clone the repository:
     ```bash
     git clone <repository-url>
-    cd math
+    cd calc
     ```
 
 2.  Install dependencies:
